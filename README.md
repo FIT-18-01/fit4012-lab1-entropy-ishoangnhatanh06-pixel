@@ -23,6 +23,7 @@ Hoàn thiện repo và nộp link GitHub. Repo cần có:
 - `tests/` với ít nhất 5 test cases
 - `logs/` có kết quả chạy thử
 - mã nguồn hoàn thiện cho Q1, Q2, Q3
+- Nộp bài qua GitHub repository.
 
 ## Gợi ý commit
 - `Complete Q1 entropy walkthrough`
