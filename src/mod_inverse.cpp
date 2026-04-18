@@ -26,16 +26,14 @@ int extended_euclid(int a, int b, int &x, int &y) {
 }
 
 int mod_inverse(int a, int m) {
-    int x = 0, y = 0;
+    int x, y;
     int g = extended_euclid(a, m, x, y);
+    
+    int result = (x % m + m) % m;
     if (g != 1) {
-        return -1;
+        result = -1;
     }
-    int inv = x % m;
-    if (inv < 0) {
-        inv += m;
-    }
-    return inv;
+    return result;
 }
 
 int main() {
